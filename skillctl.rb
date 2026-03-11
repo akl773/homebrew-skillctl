@@ -5,21 +5,21 @@
 class Skillctl < Formula
   desc "Interactive TUI for managing curated AI skills across agent folders"
   homepage "https://github.com/akl773/skillctl"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.6/skillctl_darwin_amd64.tar.gz"
-      sha256 "98076bfee94396f659f1b0e154e5ae5480cbf77b43d9ece55ecdba0301cbb7c8"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.7/skillctl_darwin_amd64.tar.gz"
+      sha256 "b135db609d786b28c7ce3453cd4ddd9330638eac6c9364d277de74043d20dd24"
 
       define_method(:install) do
         bin.install "skillctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.6/skillctl_darwin_arm64.tar.gz"
-      sha256 "c57c796c6790d5bbbbd720e495755473e052a769294ab54391f20a49e0c9d8f0"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.7/skillctl_darwin_arm64.tar.gz"
+      sha256 "509210a99def974fae29eaca82e5a0011df8daa0ddd7b267321d75abdc4c118f"
 
       define_method(:install) do
         bin.install "skillctl"
@@ -29,15 +29,15 @@ class Skillctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.6/skillctl_linux_amd64.tar.gz"
-      sha256 "173924f1700145f55ccf9fedd9c3aa3bf1209280cf79e62e9046aa8f99877e98"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.7/skillctl_linux_amd64.tar.gz"
+      sha256 "ee2b5ae1ea3bd60b32f1011d6c6d6a20bfac6775d40db9366090cae40176d2fe"
       define_method(:install) do
         bin.install "skillctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.6/skillctl_linux_arm64.tar.gz"
-      sha256 "ed941ef93a7e14bce830f7c7fac16d8b2ad57b45eac09dccc2d49e2bc953538f"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.7/skillctl_linux_arm64.tar.gz"
+      sha256 "590229ff65dc84158628dfcaa25911a2be4594de927f14c8dc633a897fd199d0"
       define_method(:install) do
         bin.install "skillctl"
       end
