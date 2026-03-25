@@ -1,26 +1,26 @@
 class Skillctl < Formula
   desc "Interactive TUI for syncing AI agent skills"
   homepage "https://github.com/akl773/skillctl"
-  version "0.1.15"
+  version "0.1.16"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.15/skillctl_darwin_arm64.tar.gz"
-      sha256 "d60c2fa17b3359dfa1fa28ee5263f6154d4080a89f62265bf86957ef28ee26e7"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.16/skillctl_darwin_arm64.tar.gz"
+      sha256 "a9ae791b97f72899b2521346a21190dec462cab18ee52e2969caf4075ce637fa"
     else
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.15/skillctl_darwin_amd64.tar.gz"
-      sha256 "57330fdf51a8e446e377208982823f230da68002112533f82b38d4fd659e92eb"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.16/skillctl_darwin_amd64.tar.gz"
+      sha256 "c3acdd7e8b445230646cd9eea118c880d2692ea0f8f57aec2a4e49e72a04bc7f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.15/skillctl_linux_arm64.tar.gz"
-      sha256 "d413924e22999b016976194cc3e93ce9cec8c8f1a6b228c62f3b6f67b89c73be"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.16/skillctl_linux_arm64.tar.gz"
+      sha256 "a3dc1790f951f724acff8acac2eb764e4c210251828c50f950b3dcc08dd23464"
     else
-      url "https://github.com/akl773/skillctl/releases/download/v0.1.15/skillctl_linux_amd64.tar.gz"
-      sha256 "a37cb8cc34328b15dfa90ea7f5300ac48ab36eac115bdbd555398a27c192e3cc"
+      url "https://github.com/akl773/skillctl/releases/download/v0.1.16/skillctl_linux_amd64.tar.gz"
+      sha256 "90f672c954f0c22d442f708693e0afd59e0d05e4a072f05c82c192b5e8b6f4cf"
     end
   end
 
